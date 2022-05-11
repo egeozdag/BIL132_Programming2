@@ -1,6 +1,6 @@
 /*
-	Student name :
-	Student ID   :
+	Student name : Ege Özdağ
+	Student ID   : 200026390
 */
 
 #include <stdlib.h>
@@ -10,9 +10,15 @@
 int count_alive_neighbors(char *b, int x, int y)
 {
 	int count = 0;
-
-	/* do stuff with b, x and y */
-
+	int i,j;
+	for(i=x-1; i<=x+1; i++){
+		for(j=y-1; j<=y+1; j++){
+			if(b[i][j] == '#')
+	    			count++;
+			else
+				continue;
+		}
+	}
 	return count;
 }
 
